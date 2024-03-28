@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Collaud</title>
+
+    <style>
+        .perfil img{
+            border-radius: 50%;
+        }
+
+        body{
+            background-image: url('src/background_gris.JPG');
+            background-size: cover;       
+        }
+
+        contenedor1
+        {
+            color: azure;
+            font-size: 30px;
+            font-family:'Courier New', Courier, monospace;
+            
+        }
+
+        nav{
+            background-color: rgb(236, 235, 235);
+            border: 2px solid rgb(73, 73, 73);
+            border-radius: 5%;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: italic;   
+        }
+
+        button
+        {
+            background-color: rgb(236, 235, 235);
+            border: 0ch;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        
+        button:hover {
+            background-color: #cac2c2;
+            border-radius: 30%;
+        }
+        
+        .button2:hover {
+            background-color: #db40cc;
+            border-radius: 30%;
+        }
+
+        .button3{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 10%;
+        }
+
+        .button3:hover {
+            background-color: #4bed60;
+            
+        }
+
+        .contenedor2{
+            height:"100%";
+            width:"100%";
+            background-image: url(src/Fondo_quien_soy.jpg);
+            position: relative; /* Establece el contenedor como posición relativa */ 
+        }
+
+        h2{
+            font-family:monospace;
+        }
+
+        .Imagenes_productos
+        {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+
+        title
+        {
+            font-size: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h3
+        {
+            font-size: 70px;
+            font-family: cursive;
+        }
+
+        .popup {
+                visibility: hidden; /* Inicialmente oculta la ventana emergente */
+                position: fixed; /* Establece la posición fija */
+                z-index: 1; /* Coloca la ventana emergente sobre otros elementos */
+                left: 50%; /* Centra horizontalmente */
+                top: 50%; /* Centra verticalmente */
+                transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
+                background-color: rgba(255, 254, 254); /* Fondo semi-transparente */
+                padding: 20px; /* Espaciado interno */
+                border-radius: 10px; /* Bordes redondeados */
+                text-align: center; /* Centra el contenido horizontalmente */
+            }
+
+        /* Muestra la ventana emergente cuando el botón se hace clic */
+        #ventanaEmergente:target {
+             visibility: visible;
+            }
+            #ventanaEmergenteWEB:target {
+             visibility: visible;
+            }
+            #ventanaEmergenteOPERADOR:target {
+             visibility: visible;
+            }
+            #ventanaEmergenteSPOTS:target {
+             visibility: visible;
+            }
+            #ventanaEmergenteFOTO:target {
+             visibility: visible;
+            }
+            #ventanaEmergenteRADIO:target {
+             visibility: visible;
+            }
+
+            a
+            {
+                 text-decoration: none; 
+            }
+    </style>
+</head>
+<body>
+    
+    <contenedor1>
+        <center>
+            <span class="perfil" id="Perfil">
+               <button><a href="aboutMe.html" title="Conoceme mas"><img src="src/Autoretrato 2.jpg" alt="Foto de perfil" height="200px" width="200px"></a></button>
+            </span>
+        </center>
+        <center>
+            <span>Santiago Collaud</span>
+        </center>
+    </contenedor1>
+
+    <nav><hr><center>
+        <span><button><a href="contact.html">Contacto</a></button> </span>
+        <span><button><a href="Galeria.html">Galeria</a></button></span>
+        <hr>
+    </center></nav>
+    <div class="contenedor2">
+        <Span><center><h2>Me defino como una persona activa, predispuesto a colaborar, con ganas de crear y crecer. </h2></center></span>
+        <span><center><h2>Capaz de generar ideas y llevarlas a la realidad de la mejor manera y disfrutar de proceso.</h2></center></span>
+        <span><center><h2>Hacer grandes cosas es mi meta principal y quiero acompañarte en tus proyectos.</h2></center></span>
+        <hr>
+        <center><button><a href="contact.html">Vamos juntos</a></button></center>
+        <br>
+    </div>
+    <br>
+    <div>
+        <center>
+        <span><button class="button2"><a href="#DiseñoSoft"><img class="Imagenes_productos" src="src/DiseñoSoft.png" alt="Imagen Diseño de software" title="Diseño de software de escritorio"></a></button></span>
+            
+        <span><button class="button2"><a href="#DiseñoWeb"><img class="Imagenes_productos" src="src/DiseñoWeb.jpg" alt="Imagen Diseño web" title="Diseño web"></a></button></span>
+        </center>
+    </div>
+    <br>
+    <div>
+        <center>
+            <span><button class="button2"><a href="#Operador"><img class="Imagenes_productos" src="src/Audio.jpg" alt="Imagen Diseño de Audio" title="Operacion de bandas en vivo"></a></button></span>
+    
+            <span><button class="button2"><a href="#Audio"><img class="Imagenes_productos" src="src/EdicionAudio.jpg" alt="Imagen Diseño edicion" title="Produccion y realizacion de sposts de video"></a></button></span>
+
+            <span><button class="button2"><a href="#Fotografia"><img class="Imagenes_productos" src="src/Fotografia.jpg" alt="Imagen Diseño de software" title="Fotografia de productos y Eventos"></a></button></span>
+        </center>
+    </div>
+    <br>
+    <div>
+        <center>
+            <span><button class="button2"><a href="#Radio"><img class="Imagenes_productos" src="src/Radio.jpg" alt="Imagen radio" title="Gestion de contenido para radios en linea y aire"></a></button></span>
+        </center>
+    </div>
+    <br>
+    <br>
+    <div class="contenedor2">
+        <br>
+        <Span><center><h3>Potencia tu empresa con nosotros</h3></center></span> 
+        <hr>
+        <center><button><a href="contact.html">Contacto</a></button></center>
+        <br>
+    </div>
+<br>
+<br>
+<div>
+
+    <section id="DiseñoSoft" style="position: relative;">
+        <span><img src="src/DiseñoSoft_grande.jpg" alt="" height="100%" width="100%"></span>
+        <span style="position: absolute; top: 20%; left: 50%; color: white; font-size: 24px; font-weight: bold;">Diseño de software a medida para empresas y comercios. Nos adaptamos a tus necesidades para lograr optimizar los tiempos de cada proceso productivo.</span>
+        <span style="position: absolute; top: 80%; left: 88%"><button class="button3"><a href="#ventanaEmergente">Ver mas</a></button></span>
+        <div id="ventanaEmergente" class="popup">
+
+            <h2>Diseño de Software a medida</h2>
+            <p>En nuestra empresa, nos dedicamos a crear soluciones de software totalmente adaptadas a las necesidades específicas de cada cliente. 
+                Ya sea que requieran aplicaciones de escritorio para Windows, Mac o Apple, estamos aquí para ofrecerles una solución a medida. Además, 
+                nos encargamos de administrar bases de datos tanto locales como remotas, garantizando la seguridad y disponibilidad 
+                de los datos en todo momento.
+                Contamos con nuestros propios servidores para garantizar el resguardo y la integridad de los datos de nuestros clientes. 
+                Nuestro enfoque en la personalización comienza desde el principio, con reuniones virtuales o presenciales donde el cliente 
+                puede exponer sus requisitos y directrices específicas.
+                Utilizamos sistemas avanzados de maquetado que permiten a nuestros clientes visualizar completamente su sistema antes 
+                de que comience su implementación. Esto asegura que el producto final cumpla con todas sus expectativas y necesidades.
+                Además de la creación inicial, ofrecemos servicios de mantenimiento continuo para cada pieza de software que desarrollamos, 
+                asegurando su funcionalidad y relevancia a lo largo del tiempo.
+                En resumen, en nuestra empresa nos comprometemos a brindar soluciones de software de alta calidad y totalmente adaptadas a 
+                las necesidades individuales de cada cliente, respaldadas por un servicio completo que incluye desde la concepción hasta el 
+                mantenimiento continuo.
+                
+            </p>
+            <a href="#DiseñoSoft" class="boton">Cerrar</a>
+          </div>
+    </section>
+
+</div>
+<div>
+    <section id="DiseñoWeb" style="position: relative;">
+        <span><img src="src/DiseñoWeb_Grande.jpg" alt="" height="100%" width="100%"></span>
+        <span style="position: absolute; top: 20%; left: 50%; color: white; font-size: 24px; font-weight: bold;">Diseño de paginas web, landig pages, estaticas y dinamicas. Asistencia y mantenimiento constante 24/7</span>
+        <span style="position: absolute; top: 80%; left: 88%"><button class="button3"><a href="#ventanaEmergenteWEB">Ver mas</a></button></span>
+        <div id="ventanaEmergenteWEB" class="popup">
+
+            <h2>Diseño Web</h2>
+            <p>En nuestro enfoque de diseño web, fusionamos creatividad y funcionalidad para ofrecer a nuestros clientes experiencias digitales
+                impactantes y efectivas. Nos especializamos en la creación de sitios web que no solo cautivan visualmente, 
+                sino que también están optimizados para un rendimiento excepcional y una experiencia de usuario fluida.
+                Desde el primer contacto, trabajamos estrechamente con nuestros clientes para comprender sus objetivos y necesidades específicas. 
+                Nuestro proceso de diseño web comienza con reuniones colaborativas, donde exploramos las ideas, preferencias de diseño y 
+                funcionalidades deseadas. Nos esforzamos por comprender la identidad única de cada cliente y reflejarla a través de un diseño web 
+                personalizado y distintivo.
+                Utilizamos las últimas tecnologías y tendencias de diseño para crear sitios web responsivos y adaptables, que brindan una experiencia 
+                óptima en dispositivos móviles,tablets y computadoras de escritorio. Además, nos aseguramos de que cada sitio web sea fácilmente 
+                gestionable y escalable, permitiendo a nuestros clientes actualizar y expandir su contenido de manera sencilla en el futuro.
+                Nuestro objetivo es no solo satisfacer, sino superar las expectativas de nuestros clientes en términos de diseño, funcionalidad 
+                y rendimiento. Estamos comprometidos a ofrecer soluciones de diseño web que no solo impresionen visualmente, sino que también 
+                impulsen el éxito de nuestros clientes en el mundo digital."
+            </p>
+            <a href="#DiseñoWeb" class="boton">Cerrar</a>
+          </div>
+    </section>
+</div>
+<div>
+    <section id="Operador" style="position: relative;">
+        <span><img src="src/audio_Grande.jpg" alt="" height="100%" width="100%"></span>
+        <span style="position: absolute; top: 20%; left: 50%; color: white; font-size: 24px; font-weight: bold;">Operacion de bandas en vivo, coordinacion de escenario, diseño de riders, produccion general de eventos</span>
+        <span style="position: absolute; top: 80%; left: 88%"><button class="button3"><a href="#ventanaEmergenteOPERADOR">Ver mas</a></button></span>
+        <div id="ventanaEmergenteOPERADOR" class="popup">
+
+            <h2>operacion de bandas en vivo</h2>
+            <p>En nuestra empresa, ofrecemos un servicio completo de operación de bandas en vivo y producción de eventos, 
+                con un enfoque integral en la coordinación de escenario y el diseño de riders para garantizar experiencias memorables y sin contratiempos.
+                Nos especializamos en la gestión detallada de cada aspecto del evento, desde la planificación inicial hasta la ejecución 
+                impecable en el escenario. Nuestro equipo experimentado se encarga de coordinar todos los elementos técnicos y logísticos
+                 necesarios para que el evento se desarrolle sin problemas.
+                Para asegurar un rendimiento de alta calidad, trabajamos en estrecha colaboración con las bandas y artistas, diseñando riders 
+                personalizados que especifican sus necesidades técnicas y logísticas. Desde los requisitos de equipo de sonido hasta 
+                las preferencias de iluminación, nos aseguramos de que cada detalle esté cuidadosamente considerado y planificado.
+                Durante el evento, nuestro equipo de operaciones de bandas en vivo se encarga de coordinar el montaje y desmontaje del escenario, 
+                gestionar los tiempos de actuación y asegurarse de que todo funcione sin problemas. Nuestra experiencia y profesionalismo 
+                garantizan que los artistas puedan concentrarse en su actuación, mientras nosotros nos encargamos de todo lo demás.
+                Ya sea un concierto, un festival o cualquier otro tipo de evento en vivo, estamos comprometidos a proporcionar servicios 
+                de producción de eventos de alta calidad que superen las expectativas de nuestros clientes y creen experiencias inolvidables para el público." 
+            </p>
+            <a href="#Operador" class="boton">Cerrar</a>
+        </div>
+    </section>
+</div>
+<div>
+    <section id="Audio" style="position: relative;">
+        <span><img src="src/EdicionAudio_grande.jpg" alt="" height="100%" width="100%"></span>
+        <span style="position: absolute; top: 20%; left: 50%; color: white; font-size: 24px; font-weight: bold;">Gestion, produccion y realiacion de sport y campañas publicitarias para radio, tv y straming</span>
+        <span style="position: absolute; top: 80%; left: 88%"><button class="button3"><a href="#ventanaEmergenteSPOTS">Ver mas</a></button></span>
+        <div id="ventanaEmergenteSPOTS" class="popup">
+
+            <h2>Produccion de Radio, TV y streaming</h2>
+            <p> Nos enorgullece ofrecer a nuestros clientes soluciones publicitarias efectivas y creativas que destacan en el competitivo mundo de los medios 
+                de comunicación. Nuestro equipo experto trabaja en estrecha colaboración con cada cliente para comprender sus objetivos comerciales 
+                y desarrollar estrategias publicitarias personalizadas que generen resultados tangibles.
+                Desde la conceptualización hasta la implementación, nos encargamos de cada aspecto de la campaña publicitaria. Esto incluye la planificación 
+                estratégica, la creación de contenido atractivo y relevante, la producción de materiales publicitarios de alta calidad y la distribución 
+                eficaz en los canales adecuados.
+                Especialmente en el ámbito deportivo, comprendemos la importancia de capturar la emoción y la energía única que rodea a los eventos deportivos.
+                Ya sea mediante narrativas emocionantes, imágenes dinámicas o testimonios inspiradores, nos esforzamos por crear campañas publicitarias 
+                que resuenen con la audiencia y generen un impacto duradero.
+                Además, nos mantenemos al tanto de las últimas tendencias y tecnologías en medios de comunicación y streaming para garantizar que nuestras 
+                campañas se mantengan relevantes y efectivas en un mundo digital en constante evolución.
+                En resumen, en nuestra agencia estamos comprometidos a ofrecer servicios de gestión, producción y realización de campañas publicitarias 
+                deportivas y de medios de comunicación que impulsen el éxito de nuestros clientes y les ayuden a alcanzar sus objetivos comerciales.   
+            </p>
+            <a href="#Audio" class="boton">Cerrar</a>
+        </div>
+    </section>
+</div>
+<div>
+    <section id="Fotografia" style="position: relative;">
+        <span><img src="src/Fotografia_Grande.jpg" alt="" height="100%" width="100%"></span>
+        <span style="position: absolute; top: 20%; left: 50%; color: white; font-size: 24px; font-weight: bold;">Fotografia profesional de productos y Eventos</span>
+        <span style="position: absolute; top: 80%; left: 88%"><button class="button3"><a href="#ventanaEmergenteFOTO">Ver mas</a></button></span>
+
+        <div id="ventanaEmergenteFOTO" class="popup">
+
+            <h2>Fotografia Profesional</h2>
+            <p> "En nuestro estudio de fotografía, nos especializamos en capturar imágenes profesionales de productos y eventos que destacan 
+                la esencia y la calidad de cada ocasión.
+                Para productos, utilizamos técnicas avanzadas de iluminación y composición para resaltar las características únicas de cada artículo. 
+                Ya sea que se trate de alimentos, moda, electrónica o cualquier otro producto, nos aseguramos de que cada fotografía transmita su 
+                atractivo y valor de manera efectiva.
+                Cuando se trata de eventos, nuestro equipo de fotógrafos expertos se encarga de capturar los momentos más significativos y emocionantes.
+                Desde conferencias y lanzamientos de productos hasta bodas y celebraciones corporativas, estamos comprometidos a capturar la esencia 
+                y la emoción de cada evento de manera auténtica y memorable.
+                Además, entendemos la importancia del branding y la coherencia visual en la fotografía de productos y eventos. 
+                Trabajamos estrechamente con nuestros clientes para asegurarnos de que nuestras imágenes se alineen perfectamente con su identidad de marca 
+                y objetivos comerciales.
+                Ya sea que necesite fotografías impresionantes para promocionar sus productos o documentar un evento especial, nuestro equipo está aquí 
+                para ofrecerle resultados excepcionales que superen sus expectativas y destaquen su marca." 
+            </p>
+            <a href="#Fotografia" class="boton">Cerrar</a>
+        </div>
+    </section>
+</div>
+<div>
+    <section id="Radio" style="position: relative;">
+        <span><img src="src/Radio_grande.jpg" alt="" height="100%" width="100%"></span>
+        <span style="position: absolute; top: 20%; left: 50%; color: white; font-size: 24px; font-weight: bold;">Produccion general de contenido para radios on line o por aire, gestion de programacion, gestion publicitaria y servicio de streaming de audio </span>
+        <span style="position: absolute; top: 80%; left: 88%"><button class="button3"><a href="#ventanaEmergenteRADIO">Ver mas</a></button></span>
+        <div id="ventanaEmergenteRADIO" class="popup">
+
+            <h2>Gestion de Radio</h2>
+            <p> "En nuestra agencia, ofrecemos una producción integral de contenido para radios, tanto en línea como por aire, brindando servicios de 
+                gestión de programación, gestión publicitaria y streaming de audio.
+                Nos especializamos en la creación de contenido de alta calidad que cautiva a la audiencia y fortalece la identidad de la estación de radio. 
+                Desde programas de radio en vivo hasta podcasts pregrabados, nuestro equipo trabaja en estrecha colaboración con nuestros clientes 
+                para desarrollar contenido atractivo y relevante que se ajuste a sus objetivos y público objetivo.
+                Además, ofrecemos servicios de gestión de programación, asegurándonos de que la programación de la estación esté bien estructurada, variada y 
+                atractiva para los oyentes. Nuestro objetivo es mantener a la audiencia comprometida y sintonizada durante toda la jornada, ofreciendo una 
+                mezcla equilibrada de música, noticias, entrevistas y otros contenidos interesantes.
+                En cuanto a la gestión publicitaria, trabajamos con anunciantes para desarrollar estrategias efectivas de publicidad en radio que lleguen
+                 a la audiencia adecuada y generen resultados tangibles. Desde la creación de anuncios persuasivos hasta la planificación estratégica de la 
+                 inserción publicitaria, nos aseguramos de maximizar el impacto de cada campaña publicitaria.
+                Finalmente, ofrecemos servicios de streaming de audio para aquellas estaciones de radio que desean llegar a una audiencia más amplia a 
+                través de plataformas en línea. Nos encargamos de la configuración técnica, la transmisión en tiempo real y la gestión de la calidad del audio, 
+                garantizando una experiencia de escucha óptima para los oyentes en línea.
+                En resumen, en nuestra agencia estamos comprometidos a ofrecer servicios completos de producción de contenido para radios, desde la gestión 
+                de programación hasta la publicidad y el streaming de audio, todo diseñado para ayudar a nuestros clientes a alcanzar sus objetivos y 
+                destacarse en el mundo de la radio."
+            </p>
+            <a href="#Radio" class="boton">Cerrar</a>
+        </div>
+    </section>
+</div>
+</body>
+<footer>
+    <center><button><a href="#Perfil">Inicio</a></button></center>
+    <center>Santiago Collaud - 2024</center>
+</footer>
+</html>

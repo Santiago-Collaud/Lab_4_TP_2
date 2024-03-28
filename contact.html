@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body{
+            background-image: url('src/background_gris.jpg');
+            background-size: cover;       
+        }
+        nav{
+            background-color: rgb(236, 235, 235);
+            border: 2px solid rgb(73, 73, 73);
+            border-radius: 5%;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: italic;   
+        }
+        button
+        {
+            background-color: rgb(236, 235, 235);
+            border: 0ch;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        
+        button:hover {
+            background-color: #cac2c2;
+            border-radius: 30%;
+        }
+        .contenedor1
+        {
+            background-image: url('src/BackgruondContacto.jpg');
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            
+        }
+        h3{
+            margin-top: 10px;
+            margin-bottom: 2px;
+        }
+        .bordeSeccion
+        {
+            border: solid black;
+            height: 50%;
+            width: 50%;
+            background-color: #c9c8c8;
+        }
+        
+        a
+            {
+                 text-decoration: none; 
+            }
+    </style>
+</head>
+<body>
+    <nav><hr>
+        <center>
+        <span><button><a href="index.html">Home</a></button></span>
+        <span><button><a href="contact.html">Contacto</a></button> </span>
+        <span><button><a href="Galeria.html">Galeria</a></button></span>
+        </center>
+        <hr>
+    </nav>
+    <div class="contenedor1">
+        <br>
+        <center>
+        <section class="bordeSeccion">
+        <form action="contacto.html" method="GET" onsubmit="return validarFormulario()">
+
+        <h3>E-Mail</h3></span>
+        <input type="email" name="Mail" id="Mail" size="30" required>
+        <h3>Nombre</h3>
+        <input type="text" name="Nombre" id="Nombre" size="30"required>
+        <h3>Apellido</h3>
+        <input type="text" name="Apellido" id="Apellido" size="30"required>
+        <h3>Empresa</h3>
+        <input type="text" name="Empresa" id="Empresa" size="30"required>
+        <h3>Telefono</h3>
+        <input type="tel" name="Telefono" id="Telefono" size="30"required>
+
+        <h3><label for="Productos">Seleccione un producto para sonsultar</label><br></h3>
+        <select name="Productos" id="Productos" size="6">
+            <option value="DiseñoWeb">Diseño Web</option>
+            <option value="DiseñoSoftware">Diseño de software a medida</option>
+            <option value="Operacion">Operacion de Bandas</option>
+            <option value="ProduccionAudioyVideo">Produccion de audio y video</option>
+            <option value="Fotografia">Fotografia</option>
+            <option value="GestionDeRadios">Gestion de Emisoras de Radio</option>
+        </select>
+
+        <h3>Mensaje</h3>
+        <textarea nombre="Mensaje" id="Mensaje" cols="30"rows="10"></textarea>
+
+        <br>
+        <span><input type="submit" value="Enviar"></span>
+        <span><input type="reset" onclick="borrarDatos()" value="Limpiar"></span>
+        <br>
+        <br>
+    </form>
+    </section>
+    </center>
+    </div>
+
+    <script>
+        function borrarDatos(){
+            var MailInput = document.getElementById('Mail');
+            var NombreInput = document.getElementById('Nombre');
+            var ApellidoInput = document.getElementById('Apellido');
+            var EmpresaInput = document.getElementById('Empresa');
+            var TelefonoInput = document.getElementById('Telefono');
+            var MensajeInput = document.getElementById('Mensaje');
+            
+            var ProductosInput = document.getElementById('Productos');
+
+            // limpiar
+            MailInput.value=' ';
+            NombreInput.value=' ';
+            ApellidoInput.value=' ';
+            EmpresaInput.value= ' ';
+            TelefonoInput.value=' ';
+            MensajeInput.value= ' ';
+            
+            //selector
+            ProductosInput.selectedIndex=-1;
+        }
+        function validarFormulario() {
+            var formulario = document.querySelector("form");
+            if (!formulario.checkValidity()) {
+            // El formulario no es válido, mostrar mensajes de validación
+            var elementos = formulario.elements;
+            for (var i = 0; i < elementos.length; i++) {
+            var elemento = elementos[i];
+            if (elemento.validity.valid === false) {
+                // Si el elemento no es válido, mostrar mensaje de validación
+                elemento.reportValidity();
+            }
+        }
+        return false; // Evita que el formulario se envíe
+    }
+    return true; // El formulario es válido, permitir su envío
+}
+    </script>
+</body>
+</html>
