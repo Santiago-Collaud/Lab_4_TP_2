@@ -19,11 +19,31 @@ button
     text-decoration: none;
     border-radius: 50%;
     }
+
+.span_nav_contacto
+    {
+        margin: 30px;
+    }
+.span_nav_galeria
+    {
+        margin: 30px;
+    }   
+.span_nav_contacto:hover
+    {  
+        transform: scale(1.9);
+        background-image: linear-gradient(to right, white, rgb(231, 33, 231))
+    }
+.span_nav_galeria:hover
+    {
+        transform: scale(1.9);
+        background-image: linear-gradient(to left, white, rgb(231, 33, 231))
+    }
         
 button:hover 
     {
-    background-color: #cac2c2;
-    border-radius: 30%;
+    background-color: #074bf889;
+    border-radius: 10%;
+    
     }
         
 .button2:hover 
