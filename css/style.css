@@ -39,6 +39,11 @@ button
         background-image: linear-gradient(to left, white, rgb(231, 33, 231))
     }
         
+.span_lado_derecho
+    {
+        float: right;
+        margin-left: 1px; /* Ajusta este valor según sea necesario */
+    }
 button:hover 
     {
     background-color: #074bf889;
