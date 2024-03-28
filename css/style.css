@@ -1,0 +1,160 @@
+body{
+    background-image: url(/src/background_gris.jpg);
+    background-size: cover; 
+}
+nav
+{
+    background-color: rgb(236, 235, 235);
+    border: 2px solid rgb(73, 73, 73);
+    border-radius: 5%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;   
+}
+button
+    {
+    background-color: rgb(236, 235, 235);
+    border: 0ch;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    }
+        
+button:hover 
+    {
+    background-color: #cac2c2;
+    border-radius: 30%;
+    }
+        
+.button2:hover 
+    {
+    background-color: #db40cc;
+    border-radius: 30%;
+    }
+
+
+.perfil img
+{ 
+    border-radius: 50%;
+}
+button
+{
+    background-color: rgb(236, 235, 235);
+    border: 0ch;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.titulo_h1
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: white;
+    margin-top: 2px;
+}
+h3
+{
+    font-size: 70px;
+    font-family: cursive;
+}
+
+.quienSoy
+{
+    background-image: url(/src/Fondo_quien_soy.jpg);
+    height:"100%";
+    width:"100%";
+    position: relative; /* Establece el contenedor como posición relativa */ 
+    font-family:monospace;
+}
+.Imagenes_productos
+{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.contenedor_potencia{
+    height:"100%";
+    width:"100%";
+    background-image: url(/src/Fondo_quien_soy.jpg);
+    position: relative; /* Establece el contenedor como posición relativa */ 
+}
+
+.popup {
+    visibility: hidden; /* Inicialmente oculta la ventana emergente */
+    position: fixed; /* Establece la posición fija */
+    z-index: 1; /* Coloca la ventana emergente sobre otros elementos */
+    left: 50%; /* Centra horizontalmente */
+    top: 50%; /* Centra verticalmente */
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
+    background-color: rgba(255, 254, 254); /* Fondo semi-transparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Muestra la ventana emergente cuando el botón se hace clic */
+#ventanaEmergente:target {
+ visibility: visible;
+}
+#ventanaEmergenteWEB:target {
+ visibility: visible;
+}
+#ventanaEmergenteOPERADOR:target {
+ visibility: visible;
+}
+#ventanaEmergenteSPOTS:target {
+ visibility: visible;
+}
+#ventanaEmergenteFOTO:target {
+ visibility: visible;
+}
+#ventanaEmergenteRADIO:target {
+ visibility: visible;
+}
+
+a
+{
+    text-decoration: none; 
+}
+
+.sobreMi
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+.h1_quienSoy
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+    color: white;
+}
+
+.contenedor_Contacto
+{
+    background-image: url('/src/BackgruondContacto.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;      
+}
+.bordeSeccion_contacto
+{
+    border: solid black;
+    height: 50%;
+    width: 50%;
+    background-color: #c9c8c8;
+}
+.h3_contacto
+{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.h1_galeria
+{
+    font-size: 30px;
+    color: white;
+    font-family:monospace;
+}

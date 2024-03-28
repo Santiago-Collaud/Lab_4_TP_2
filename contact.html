@@ -4,58 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <style>
-        body{
-            background-image: url('src/background_gris.jpg');
-            background-size: cover;       
-        }
-        nav{
-            background-color: rgb(236, 235, 235);
-            border: 2px solid rgb(73, 73, 73);
-            border-radius: 5%;
-            font-family:Arial, Helvetica, sans-serif;
-            font-style: italic;   
-        }
-        button
-        {
-            background-color: rgb(236, 235, 235);
-            border: 0ch;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 20px;
-            text-decoration: none;
-            border-radius: 50%;
-        }
-        
-        button:hover {
-            background-color: #cac2c2;
-            border-radius: 30%;
-        }
-        .contenedor1
-        {
-            background-image: url('src/BackgruondContacto.jpg');
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-            
-        }
-        h3{
-            margin-top: 10px;
-            margin-bottom: 2px;
-        }
-        .bordeSeccion
-        {
-            border: solid black;
-            height: 50%;
-            width: 50%;
-            background-color: #c9c8c8;
-        }
-        
-        a
-            {
-                 text-decoration: none; 
-            }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <nav><hr>
@@ -66,24 +15,24 @@
         </center>
         <hr>
     </nav>
-    <div class="contenedor1">
+    <div class="contenedor_Contacto">
         <br>
         <center>
-        <section class="bordeSeccion">
+        <section class="bordeSeccion_contacto">
         <form action="contacto.html" method="GET" onsubmit="return validarFormulario()">
 
-        <h3>E-Mail</h3></span>
+        <h3 class="h3_contacto">E-Mail</h3></span>
         <input type="email" name="Mail" id="Mail" size="30" required>
-        <h3>Nombre</h3>
+        <h3 class="h3_contacto">Nombre</h3>
         <input type="text" name="Nombre" id="Nombre" size="30"required>
-        <h3>Apellido</h3>
+        <h3 class="h3_contacto">Apellido</h3>
         <input type="text" name="Apellido" id="Apellido" size="30"required>
-        <h3>Empresa</h3>
+        <h3 class="h3_contacto">Empresa</h3>
         <input type="text" name="Empresa" id="Empresa" size="30"required>
-        <h3>Telefono</h3>
+        <h3 class="h3_contacto">Telefono</h3>
         <input type="tel" name="Telefono" id="Telefono" size="30"required>
 
-        <h3><label for="Productos">Seleccione un producto para sonsultar</label><br></h3>
+        <h3 class="h3_contacto"><label for="Productos">Seleccione un producto para sonsultar</label><br></h3>
         <select name="Productos" id="Productos" size="6">
             <option value="DiseñoWeb">Diseño Web</option>
             <option value="DiseñoSoftware">Diseño de software a medida</option>
@@ -93,7 +42,7 @@
             <option value="GestionDeRadios">Gestion de Emisoras de Radio</option>
         </select>
 
-        <h3>Mensaje</h3>
+        <h3 class="h3_contacto">Mensaje</h3>
         <textarea nombre="Mensaje" id="Mensaje" cols="30"rows="10"></textarea>
 
         <br>
