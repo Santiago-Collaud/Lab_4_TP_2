@@ -176,22 +176,14 @@ a
         font-family: 'Times New Roman', Times, serif;
         font-style:italic;
         color: white;
-    }
-
-.contenedor_Contacto    
-    {
-        background-image: url('/src/BackgruondContacto.jpg');
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-size: cover;      
-    }
+    } 
 .bordeSeccion_contacto
     {
         border: solid black;
         height: 50%;
-        width: 50%;
+        width: 54%;
         background-color: #c9c8c8;
+        border-radius: 20px;
     }
 .h3_contacto
     {
@@ -206,11 +198,11 @@ a
         font-family:monospace;
     }
 .button_potencia_vamos
-{
-    padding: 20px;
-}
+    {
+        padding: 20px;
+    }
 .button_emergente
-{
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }

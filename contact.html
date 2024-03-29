@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/dark_style.css" id="dark_style">
+
     <script src="/scrpis/darckMode.js"></script>
+    <script src="/scrpis/validacion.js"></script>
     
 </head>
 <body onload="cambiarDarkMode()">
@@ -19,7 +21,7 @@
         </center>
         <hr>
     </nav>
-    <div class="contenedor_Contacto">
+    <div>
         
         <center>
         <section class="bordeSeccion_contacto">
@@ -34,7 +36,7 @@
         <h3 class="h3_contacto">Empresa</h3>
         <input type="text" name="Empresa" id="Empresa" size="30"required>
         <h3 class="h3_contacto">Telefono</h3>
-        <input type="tel" name="Telefono" id="Telefono" size="30"required>
+        <input type="number" name="Telefono" id="Telefono" size="30"required>
 
         <h3 class="h3_contacto"><label for="Productos">Seleccione un producto para sonsultar</label><br></h3>
         <select name="Productos" id="Productos" size="6">
@@ -50,53 +52,13 @@
         <textarea nombre="Mensaje" id="Mensaje" cols="30"rows="10"></textarea>
 
         <br>
-        <span><input type="submit" value="Enviar"></span>
-        <span><input type="reset" onclick="borrarDatos()" value="Limpiar"></span>
+        <span><input type="button" onclick="estaVacio()"value="Enviar"></span>
+        <span><input type="button" onclick="borrarDatos()" value="Limpiar"></span>
         <br>
         <br>
     </form>
     </section>
     </center>
-    </div>
-
-    <script>
-        function borrarDatos(){
-            var MailInput = document.getElementById('Mail');
-            var NombreInput = document.getElementById('Nombre');
-            var ApellidoInput = document.getElementById('Apellido');
-            var EmpresaInput = document.getElementById('Empresa');
-            var TelefonoInput = document.getElementById('Telefono');
-            var MensajeInput = document.getElementById('Mensaje');
-            
-            var ProductosInput = document.getElementById('Productos');
-
-            // limpiar
-            MailInput.value=' ';
-            NombreInput.value=' ';
-            ApellidoInput.value=' ';
-            EmpresaInput.value= ' ';
-            TelefonoInput.value=' ';
-            MensajeInput.value= ' ';
-            
-            //selector
-            ProductosInput.selectedIndex=-1;
-        }
-        function validarFormulario() {
-            var formulario = document.querySelector("form");
-            if (!formulario.checkValidity()) {
-            // El formulario no es válido, mostrar mensajes de validación
-            var elementos = formulario.elements;
-            for (var i = 0; i < elementos.length; i++) {
-            var elemento = elementos[i];
-            if (elemento.validity.valid === false) {
-                // Si el elemento no es válido, mostrar mensaje de validación
-                elemento.reportValidity();
-            }
-        }
-        return false; // Evita que el formulario se envíe
-    }
-    return true; // El formulario es válido, permitir su envío
-}
-    </script>
+</div>
 </body>
 </html>
