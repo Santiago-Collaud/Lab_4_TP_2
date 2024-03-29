@@ -21,13 +21,27 @@ button
         text-decoration: none;
         border-radius: 20%;
     }
+button:hover 
+    {
+    background-color: #db40cc;
+    border-radius: 10%;
+    
+    }
 .span_nav_contacto
     {
+        text-decoration: none;
         margin: 30px;
+        color:white !important;
+        font-family: 'Courier New', Courier, monospace;
+       
     }
 .span_nav_galeria
     {
+        text-decoration: none;
         margin: 30px;
+        color:white !important;
+        font-family: 'Courier New', Courier, monospace;
+        
     }   
 .span_nav_contacto:hover
     {  
@@ -46,15 +60,8 @@ button
         right: 2%;
         top: 5%;
     }
-    
-button:hover 
-    {
-    background-color: #074bf889;
-    border-radius: 10%;
-    
-    }
         
-.button2:hover 
+.button2:hover /*boton de productos*/
     {
     background-color: #db40cc;
     border-radius: 30%;
@@ -62,17 +69,17 @@ button:hover
 
 
 .perfil img
-{ 
-    border-radius: 50%;
-}
+    { 
+        border-radius: 50%;
+    }
 
 .titulo_h1
-{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 40px;
-    color: white;
-    margin-top: 2px;
-}
+    {
+        font-family:'Courier New', Courier, monospace;
+        font-size: 40px;
+        color: white;
+        margin-top: 2px;
+    }
 h3
 {
     font-size: 70px;
@@ -80,101 +87,119 @@ h3
 }
 
 .quienSoy
-{
-    background-image: url(/src/Fondo_quien_soy.jpg);
-    height:"100%";
-    width:"100%";
-    position: relative; /* Establece el contenedor como posición relativa */ 
-    font-family:monospace;
-}
-.Imagenes_productos
-{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-}
-.contenedor_potencia{
-    height:"100%";
-    width:"100%";
-    background-image: url(/src/Fondo_quien_soy.jpg);
-    position: relative; /* Establece el contenedor como posición relativa */ 
-}
+    {
+        background-image: url(/src/Fondo_quien_soy.jpg);
+        height:"100%";
+        width:"100%";
+        position: relative; /* Establece el contenedor como posición relativa */ 
+        font-family:monospace;
+    }
 
-.popup {
-    visibility: hidden; /* Inicialmente oculta la ventana emergente */
-    position: fixed; /* Establece la posición fija */
-    z-index: 1; /* Coloca la ventana emergente sobre otros elementos */
-    left: 50%; /* Centra horizontalmente */
-    top: 50%; /* Centra verticalmente */
-    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
-    background-color: rgba(255, 254, 254); /* Fondo semi-transparente */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center; /* Centra el contenido horizontalmente */
-}
+.Imagenes_productos
+    {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+.contenedor_potencia
+    {
+        height:"100%";
+        width:"100%";
+        background-image: url(/src/Fondo_quien_soy.jpg);
+        position: relative; /* Establece el contenedor como posición relativa */ 
+    }
+
+.popup 
+    {
+        visibility: hidden; /* Inicialmente oculta la ventana emergente */
+        position: fixed; /* Establece la posición fija */
+        z-index: 1; /* Coloca la ventana emergente sobre otros elementos */
+        left: 50%; /* Centra horizontalmente */
+        top: 50%; /* Centra verticalmente */
+        transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
+        background-color: rgba(255, 254, 254); /* Fondo semi-transparente */
+        padding: 20px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
 
 /* Muestra la ventana emergente cuando el botón se hace clic */
-#ventanaEmergente:target {
- visibility: visible;
-}
-#ventanaEmergenteWEB:target {
- visibility: visible;
-}
-#ventanaEmergenteOPERADOR:target {
- visibility: visible;
-}
-#ventanaEmergenteSPOTS:target {
- visibility: visible;
-}
-#ventanaEmergenteFOTO:target {
- visibility: visible;
-}
-#ventanaEmergenteRADIO:target {
- visibility: visible;
-}
+#ventanaEmergente:target 
+    {
+        visibility: visible;
+    }
+#ventanaEmergenteWEB:target 
+    {   
+        visibility: visible;
+    }
+#ventanaEmergenteOPERADOR:target 
+    {
+        visibility: visible;
+    }
+#ventanaEmergenteSPOTS:target  
+    {
+        visibility: visible;
+    }
+#ventanaEmergenteFOTO:target
+    {
+        visibility: visible;
+    }
+#ventanaEmergenteRADIO:target 
+    {
+        visibility: visible;
+    }
 
 a
-{
-    text-decoration: none; 
-}
+    {
+        text-decoration: none; 
+    }
 
 .sobreMi
-{
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+    {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
 
-}
+    }
 .h1_quienSoy
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-style:italic;
-    color: white;
-}
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-style:italic;
+        color: white;
+    }
 
-.contenedor_Contacto
-{
-    background-image: url('/src/BackgruondContacto.jpg');
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: cover;      
-}
+.contenedor_Contacto    
+    {
+        background-image: url('/src/BackgruondContacto.jpg');
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-size: cover;      
+    }
 .bordeSeccion_contacto
-{
-    border: solid black;
-    height: 50%;
-    width: 50%;
-    background-color: #c9c8c8;
-}
+    {
+        border: solid black;
+        height: 50%;
+        width: 50%;
+        background-color: #c9c8c8;
+    }
 .h3_contacto
-{
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-size: 20px;
-}
+    {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        font-size: 20px;
+    }
 .h1_galeria
+    {
+        font-size: 30px;
+        color: white;
+        font-family:monospace;
+    }
+.button_potencia_vamos
 {
-    font-size: 30px;
-    color: white;
-    font-family:monospace;
+    padding: 20px;
+}
+.button_emergente
+{
+    padding-left: 10px;
+    padding-right: 10px;
 }

@@ -1,17 +1,89 @@
 nav
-{
-    background-color: rgb(36, 36, 36);
-    border: 2px solid rgb(5, 5, 5);
-    border-radius: 5%;
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: italic;   
-}
+    {
+        background-color: rgb(36, 36, 36);
+        border: 2px solid rgb(5, 5, 5);
+        border-radius: 5%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: italic;   
+    }
 button
     {
-    background-color: rgb(249, 246, 246);
+    background-color: #074bf889;
     border: 0ch;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     text-decoration: none;
     border-radius: 20%;
+    }
+button:hover 
+    {
+    background-color: #d6d6d689;
+    border-radius: 10%;  
+    }
+.span_nav_contacto
+    {
+        background-color: aquamarine;
+        text-decoration: none;
+        margin: 30px;
+        font-family: 'Courier New', Courier, monospace;      
+    }
+.span_nav_galeria
+    {
+        background-color: aquamarine;
+        text-decoration: none;
+        margin: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        
+    }   
+.span_nav_contacto:hover
+    {  
+        transform: scale(1.9);
+        background-image: linear-gradient(to right, white, rgb(138, 137, 138))
+    }
+.span_nav_galeria:hover
+    {
+        transform: scale(1.9);
+        background-image: linear-gradient(to left, white, rgb(138, 137, 138))
+    }
+.button2:hover /*boton de productos*/
+    {
+        background-color: #d6d6d689;
+        border-radius: 30%;
+    }
+.quienSoy
+    {
+        background-image: url(/src/Fondo_quien_soy.jpg);
+        height:"100%";
+        width:"100%";
+        position: relative; /* Establece el contenedor como posición relativa */ 
+        font-family:monospace;
+        filter: brightness(60%); /* Ajusta el valor según lo desees */
+    }
+    .contenedor_potencia background-image {
+        filter: brightness(60%);
+    }
+.contenedor_potencia,.quienSoy
+    {
+        height:"100%";
+        width:"100%";
+        background-image: url(/src/Fondo_quien_soy.jpg);
+        position: relative; /* Establece el contenedor como posición relativa */ 
+        filter: brightness(60%); /* Ajusta el valor según lo desees */
+    }
+.button_potencia_vamos
+    { 
+        background-color: rgb(255, 255, 255);
+    }
+.button_potencia_vamos:hover
+    {
+        background-color: rgb(255, 255, 255);
+    }
+.button_emergente
+    {
+        background-color: rgb(203, 200, 200);
+    }
+    
+.button_emergente:hover
+    {
+        background-color: rgb(255, 255, 255);
     }
