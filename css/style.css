@@ -27,7 +27,7 @@ button:hover
     border-radius: 10%;
     
     }
-.span_nav_contacto
+.span_nav_izquierdo
     {
         text-decoration: none;
         margin: 30px;
@@ -35,26 +35,37 @@ button:hover
         font-family: 'Courier New', Courier, monospace;
        
     }
-.span_nav_galeria
+.span_nav_derecho
+    {
+        text-decoration: none;
+        margin: 30px;
+        color:white !important;
+        font-family: 'Courier New', Courier, monospace;    
+    }   
+.span_nav_centro
     {
         text-decoration: none;
         margin: 30px;
         color:white !important;
         font-family: 'Courier New', Courier, monospace;
-        
-    }   
-.span_nav_contacto:hover
+    }
+.span_nav_izquierdo:hover
     {  
         transform: scale(1.9);
         background-image: linear-gradient(to right, white, rgb(231, 33, 231))
     }
-.span_nav_galeria:hover
+.span_nav_derecho:hover
     {
         transform: scale(1.9);
         background-image: linear-gradient(to left, white, rgb(231, 33, 231))
     }
+.span_nav_centro:hover
+    {
+        transform: scale(1.9);
+        background-color: rgb(231, 77, 231);
+    }
         
-.darck_lado_derecho
+.darck_lado_derecho/*boton modo darck*/
     {
         position: absolute;
         right: 2%;

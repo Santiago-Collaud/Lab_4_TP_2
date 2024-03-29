@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Collaud - Sobre mi</title>
+
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dark_style.css" id="dark_style">
+    <script src="/scrpis/darckMode.js"></script>
+    
 </head>
-<body>
+<body onload="cambiarDarkMode()">
+    
     <nav><hr>
         <center>
-            <span><button><a href="index.html">Home</a></button> </span>
-            <span><button><a href="contact.html">Contacto</a></button> </span>
-            <span><button><a href="Galeria.html">Galeria</a></button></span>
+            <span><button class="span_nav_izquierdo"><a href="index.html">Home</a></button> </span>
+            <span><button class="span_nav_centro"><a href="contact.html">Contacto</a></button> </span>
+            <span><button class="span_nav_derecho"><a href="Galeria.html">Galeria</a></button></span>
         <hr>
         </center>
     </nav>

@@ -20,31 +20,46 @@ button:hover
     background-color: #d6d6d689;
     border-radius: 10%;  
     }
-.span_nav_contacto
+.span_nav_izquierdo
     {
         background-color: aquamarine;
         text-decoration: none;
         margin: 30px;
         font-family: 'Courier New', Courier, monospace;      
     }
-.span_nav_galeria
+.span_nav_derecho
     {
         background-color: aquamarine;
         text-decoration: none;
         margin: 30px;
         font-family: 'Courier New', Courier, monospace;
         
-    }   
-.span_nav_contacto:hover
+    }  
+.span_nav_centro
+    {
+        background-color: aquamarine;
+        text-decoration: none;
+        margin: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        
+    }  
+
+.span_nav_izquierdo:hover
     {  
         transform: scale(1.9);
         background-image: linear-gradient(to right, white, rgb(138, 137, 138))
     }
-.span_nav_galeria:hover
+.span_nav_derecho:hover
     {
         transform: scale(1.9);
         background-image: linear-gradient(to left, white, rgb(138, 137, 138))
     }
+.span_nav_centro:hover
+    {
+        transform: scale(1.9);
+        background-color: rgb(220, 219, 219);
+    }
+
 .button2:hover /*boton de productos*/
     {
         background-color: #d6d6d689;
