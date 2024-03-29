@@ -1,25 +1,26 @@
-body{
-    background-image: url(/src/background_gris.jpg);
-    background-size: cover; 
-}
+body
+    {
+        background-image: url(/src/background_gris.jpg);
+        background-size: cover; 
+    }
 nav
-{
-    background-color: rgb(236, 235, 235);
-    border: 2px solid rgb(73, 73, 73);
-    border-radius: 5%;
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: italic;   
-}
+    {
+        background-color: rgb(236, 235, 235);
+        border: 2px solid rgb(73, 73, 73);
+        border-radius: 5%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: italic;   
+    }   
+
 button
     {
-    background-color: rgb(236, 235, 235);
-    border: 0ch;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 50%;
+        background-color: rgb(249, 246, 246);
+        border: 0ch;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 20%;
     }
-
 .span_nav_contacto
     {
         margin: 30px;
@@ -39,11 +40,13 @@ button
         background-image: linear-gradient(to left, white, rgb(231, 33, 231))
     }
         
-.span_lado_derecho
+.darck_lado_derecho
     {
-        float: right;
-        margin-left: 1px; /* Ajusta este valor según sea necesario */
+        position: absolute;
+        right: 2%;
+        top: 5%;
     }
+    
 button:hover 
     {
     background-color: #074bf889;
@@ -62,15 +65,7 @@ button:hover
 { 
     border-radius: 50%;
 }
-button
-{
-    background-color: rgb(236, 235, 235);
-    border: 0ch;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 50%;
-}
+
 .titulo_h1
 {
     font-family:'Courier New', Courier, monospace;
