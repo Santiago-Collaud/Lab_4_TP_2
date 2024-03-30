@@ -30,7 +30,7 @@ function estaVacio()
     var Mensaje = document.getElementById('Mensaje').value;
     var Producto = document.getElementById('Productos').value;
 
-    if(Mail=='' && Nombre=='' && Apellido== '' && Empresa== '' && Telefono== '' && Mensaje == '' &&Producto== '')
+    if(Mail=='' || Nombre=='' || Apellido== '' || Empresa== '' || Telefono== '' || Mensaje == '' || Producto== '')
     {
         alert("Faltan completar datos")
     }

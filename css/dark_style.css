@@ -74,7 +74,7 @@ button:hover
         font-family:monospace;
         filter: brightness(60%); /* Ajusta el valor según lo desees */
     }
-    .contenedor_potencia background-image {
+.contenedor_potencia background-image {
         filter: brightness(60%);
     }
 .contenedor_potencia,.quienSoy
@@ -107,4 +107,12 @@ button:hover
         background-color: #545454;
         border-radius: 20px;
         color: white;
+    }
+    .masOscuro
+    {
+        filter: brightness(60%);
+    }
+    .masOscuro_2
+    {
+        filter: brightness(70%);
     }
