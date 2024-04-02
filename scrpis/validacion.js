@@ -30,15 +30,27 @@ function estaVacio()
     var Mensaje = document.getElementById('Mensaje').value;
     var Producto = document.getElementById('Productos').value;
 
+    var flag1=false;
+    var flag2=false;
+    
+    // Expresión regular para verificar si el email contiene '@' y '.'
+    var expresionRegular = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if(Mail=='' || Nombre=='' || Apellido== '' || Empresa== '' || Telefono== '' || Mensaje == '' || Producto== '')
     {
         alert("Faltan completar datos")
     }
     else
     {
-        captcha()
-    }
-    
+        if(expresionRegular.test(Mail))
+        {
+            captcha()
+        }
+        else
+        {
+            alert("El mail debe contener un @ y al menos un punto")
+        }
+    }  
 }
 
 function captcha()
