@@ -206,3 +206,21 @@ a
         padding-left: 10px;
         padding-right: 10px;
     }
+.span_responsive
+{
+        position: absolute;
+        
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -20%);
+        color: white;
+        font-size: 2vw; /* Tamaño de fuente relativo al ancho de la ventana */
+        font-weight: bold;
+        max-width: 80%; /* Ancho máximo para mantener legibilidad en pantallas más grandes */
+}
+/* Media query para ajustar el tamaño de fuente en dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+    span {
+        font-size: 3vw; /* Tamaño de fuente más grande para dispositivos más pequeños */
+    }
+}
