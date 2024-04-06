@@ -224,3 +224,19 @@ a
         font-size: 3vw; /* Tamaño de fuente más grande para dispositivos más pequeños */
     }
 }
+/* Estilos base para el input */
+input[type="text"] input[type="email"] {
+    width: 100%; /* Ancho completo del contenedor padre */
+    padding: 10px; /* Espacio interno */
+    font-size: 16px; /* Tamaño de fuente inicial */
+    border: 1px solid #ccc; /* Borde simple */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+/* Media query para ajustar el tamaño de fuente en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    input[type="text"] {
+        font-size: 14px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+}
