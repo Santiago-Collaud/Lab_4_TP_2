@@ -21,11 +21,30 @@ button
         text-decoration: none;
         border-radius: 20%;
     }
+.button_redondo
+    {
+        background-color: rgb(249, 246, 246);
+        border: 0ch;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 20%;
+    }
 button:hover 
     {
     background-color: #db40cc;
     border-radius: 10%;
-    
+    }
+.button_redondo:hover 
+    {
+    background-color: #db40cc;
+    border-radius: 10%;
+    animation: 1s anim;
+    }
+    @keyframes anim 
+    {
+        0%{transform :rotatez(0);}
+        100%{transform: rotateZ(360deg);}
     }
 .span_nav_izquierdo
     {
@@ -71,7 +90,6 @@ button:hover
         right: 1%;
         top: 1%;
     }
-        
 .button2:hover /*boton de productos*/
     {
     background-color: #db40cc;
@@ -105,13 +123,14 @@ h3
         position: relative; /* Establece el contenedor como posición relativa */ 
         font-family:monospace;
     }
-
-.Imagenes_productos
-    {
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
-    }
+.Imagenes_productos {
+    max-width: 100%; /* Ajusta el ancho máximo al contenedor */
+    height: 150px; /* Permite que la altura se ajuste automáticamente según el ancho */
+    width: 150px;
+    border-radius: 50%; /* Crea un borde circular */
+    aspect-ratio: 1/1; /* Mantiene una relación de aspecto cuadrada (opcional) */
+    
+}
 .contenedor_potencia
     {
         height:"100%";
@@ -122,6 +141,7 @@ h3
 
 .popup 
     {
+        width: 80%;
         visibility: hidden; /* Inicialmente oculta la ventana emergente */
         position: fixed; /* Establece la posición fija */
         z-index: 1; /* Coloca la ventana emergente sobre otros elementos */
@@ -203,27 +223,45 @@ a
     }
 .button_emergente
     {
-        padding-left: 10px;
-        padding-right: 10px;
+        height: 100%;
+        width: 100%;
+        padding-left:5px;
+        padding-right: 5px;
     }
+ 
 .span_responsive
 {
-        position: absolute;
-        
-        top: 20%;
-        left: 80%;
+        position: relative;
+        top: 10%;
+        left: 2%;
         transform: translate(-50%, -20%);
         color: white;
-        font-size: 2vw; /* Tamaño de fuente relativo al ancho de la ventana */
+        font-size: 5vw; /* Tamaño de fuente relativo al ancho de la ventana */
         font-weight: bold;
         max-width: 80%; /* Ancho máximo para mantener legibilidad en pantallas más grandes */
 }
-/* Media query para ajustar el tamaño de fuente en dispositivos más pequeños */
+
+/*Media query para ajustar el tamaño de fuente en dispositivos más pequeños */
 @media screen and (max-width: 768px) {
     span {
-        font-size: 3vw; /* Tamaño de fuente más grande para dispositivos más pequeños */
+        font-size: 5vw; /* Tamaño de fuente más grande para dispositivos más pequeños */
     }
 }
+
+.div_oculto
+{
+    display: none;
+    opacity: 0; /*oculto inicialmente y transparente*/
+    transition:opacity 1s ease; /* Transición suave de la opacidad durante 0.5 segundos */
+    height: auto;
+    width: auto;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius:5% ;
+    padding: 50px;
+    background-color: rgb(37, 37, 37);
+}
+
+
 /* Estilos base para el input */
 input[type="text"] input[type="email"] {
     width: 100%; /* Ancho completo del contenedor padre */
