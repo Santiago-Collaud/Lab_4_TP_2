@@ -25,9 +25,6 @@ button
     {
         background-color: rgb(249, 246, 246);
         border: 0ch;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 20px;
-        text-decoration: none;
         border-radius: 20%;
     }
 button:hover 
@@ -77,6 +74,7 @@ button:hover
     {
         transform: scale(1.9);
         background-image: linear-gradient(to left, white, rgb(231, 33, 231))
+        
     }
 .span_nav_centro:hover
     {
@@ -125,8 +123,8 @@ h3
     }
 .Imagenes_productos {
     max-width: 100%; /* Ajusta el ancho máximo al contenedor */
-    height: 150px; /* Permite que la altura se ajuste automáticamente según el ancho */
-    width: 150px;
+    height: 130px; /* Permite que la altura se ajuste automáticamente según el ancho */
+    width: auto;
     border-radius: 50%; /* Crea un borde circular */
     aspect-ratio: 1/1; /* Mantiene una relación de aspecto cuadrada (opcional) */
     

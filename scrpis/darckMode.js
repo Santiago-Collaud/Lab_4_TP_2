@@ -1,7 +1,7 @@
 function cambiarDarkMode() {
     var stylesheet = document.getElementById("dark_style");
-    var Stylesheet = "/css/style.css"; // rutade la hoja de estilo oscuro
-    var darkStylesheet = "/css/dark_style.css"; // ruta de la hoja de estilo clara
+    var Stylesheet = "/css/style.css"; // rutade la hoja de estilo clara
+    var darkStylesheet = "/css/dark_style.css"; // ruta de la hoja de estilo oscura
 
     // Verifica si hay un modo almacenado en el almacenamiento local
     var modoAlmacenado = localStorage.getItem('modo');

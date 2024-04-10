@@ -7,7 +7,8 @@ function ocultarTodosLosDivs() {
     var divAudio = document.getElementById('Audio');
     var divFotografia = document.getElementById('Fotografia');
     var divRadio = document.getElementById('Radio');
-    
+
+
 
     // Ocultar todos los divs
     divDiseñoSoft.style.display = 'none';
@@ -17,17 +18,22 @@ function ocultarTodosLosDivs() {
     divFotografia.style.display = 'none';
     divRadio.style.display = 'none';
 
+    
     // Agrega aquí más líneas si tienes más divs que deseas controlar
 }
 
 function mostrarDiv(divId) {
     // Obtener el div deseado por su ID
     var div = document.getElementById(divId);
+    
 
     // Verificar si el div está visible
     if (div.style.display === 'block') {
         // Si el div está visible, ocultarlo
         div.style.display = 'none';
+        div_abajo.style.display='none';
+
+        
     } else {
         // Si el div está oculto, ocultar todos los demás divs y luego mostrar el div deseado
         ocultarTodosLosDivs();
@@ -35,17 +41,4 @@ function mostrarDiv(divId) {
         div.style.display = 'block';
         
     }
-}/*
-function mostrarDiv(divId) {
-    ocultarTodosLosDivs(); // Ocultar todos los divs ocultos antes de mostrar el deseado
-
-    var div = document.getElementById(divId);
-    
-    div.style.display = 'block'; // Mostrar el div deseado
-
-    // Aplicar efecto de fade in ajustando la opacidad de 0 a 1
-    setTimeout(function() {
-        div.style.opacity = '1';
-    }, 10); // Utilizar un pequeño retraso para asegurar que se aplique la transición
 }
-*/
