@@ -8,8 +8,6 @@ function ocultarTodosLosDivs() {
     var divFotografia = document.getElementById('Fotografia');
     var divRadio = document.getElementById('Radio');
 
-
-
     // Ocultar todos los divs
     divDiseñoSoft.style.display = 'none';
     divDiseñoWeb.style.display = 'none';
@@ -31,7 +29,6 @@ function mostrarDiv(divId) {
     if (div.style.display === 'block') {
         // Si el div está visible, ocultarlo
         div.style.display = 'none';
-        div_abajo.style.display='none';
 
         
     } else {
