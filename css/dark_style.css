@@ -20,6 +20,13 @@ button:hover
     background-color: #d6d6d689;
     border-radius: 10%;  
     }
+
+    .button_redondo
+    {
+        background-color: rgb(1, 10, 112);
+        border: 0ch;
+        border-radius: 20%;
+    }
 .span_nav_izquierdo
     {
         background-color: aquamarine;

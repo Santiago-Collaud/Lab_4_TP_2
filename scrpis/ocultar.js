@@ -49,8 +49,9 @@ function mostrarDiv(divId,boton) {
     } else {
         // Si el div está oculto, ocultar todos los demás divs y luego mostrar el div deseado
         ocultarTodosLosDivs();
-        div.style.opacity = 1; // Luego establecer opacidad a 1 para mostrar con fade
         div.style.display = 'block';
+        div.style.opacity = '1'; // Luego establecer opacidad a 1 para mostrar con fade
+        
         boton.style.backgroundImage = 'linear-gradient(to top, rgb(255, 0, 0), rgb(254, 180, 89))';
     }
 }
